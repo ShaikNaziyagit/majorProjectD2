@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Bulling</title>
+   
 </head>
 <body>
-    <div id="video-card" class="card">
-        <video width="640" height="360"
-        controls autoplay muted loop poster=""> 
-        <source src="" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="card" id="story-card">
-        <h1>STORY TIME</h1>
-        <img src="">
-        <button onclick="read_story1()">Read Story</button>
+
+    <div id="videos">
+        <button onclick="playvideo()">Play Video Lessons</button>
         
     </div>
-    <div class="card" id="story-card">
-        <h1>STORY TIME</h1>
-        <img src="">
-        <button onclick="read_story2()">Read Story</button>
+    <div id="stories">
+        <button onclick="readstories()">Read Stories</button>
         
     </div>
+    <div id="quiz">
+        <button onclick="playquiz()">Play Quiz</button>
+        
+    </div>
+    <div id="ai-mode">
+        <button onclick="askai()">Ask Ai</button>
+        
+    </div>
+    <div id="content"></div>
+
+ <script src="../java_script/cyberbullying.js"></script>
+
+
+
+
+
+
+
+
     
-    <script>
-        function read_story1(){
-            window.location.href='../stories/cyberbullying_1.txt';
-        }
-        function read_story2(){
-            window.location.href='../stories/cyberbullying_2.txt';
-        }
-    </script>
 </body>
 </html>
