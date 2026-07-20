@@ -28,7 +28,19 @@ function playVideo(){
 
             );
         const data=await response.json();
+        element.innerHTML=
+        <div class="story">
+            <h2>${data.title}</h2>
+            <p>${data.story}</p>
+            <h3>Lesson Learned</h3>
+            <p>${data.lesson}</p>
+        </div>;
         
+        }
+        catch(error)
+        {
+            element.innerHTML=<p>Failed to Generate story.</p>
+            console.log(error);
         }
    
 
